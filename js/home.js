@@ -26,82 +26,58 @@ const text2 = document.getElementById("text2")
 const text3 = document.getElementById("text3")
 const read = document.getElementById("read")
 const read2 = document.getElementById("read2")
+const alla = document.getElementById("alla")
+const kebabs = document.getElementById("kebabs")
+const pides = document.getElementById("pides")
+const burgers = document.getElementById("burgers")
+const sides = document.getElementById("sides")
+const others = document.getElementById("others")
+const drinks = document.getElementById("drinks")
+const dessetrs = document.getElementById("dessetrs")
+const meal = document.getElementById("meal")
+const all2 = document.getElementById("all2")
+const shashlik = document.getElementById("shashlik")
+const pidess = document.getElementById("pidess")
+const gamburger = document.getElementById("gamburger")
+
+
+
+shashlik.classList.add("shashlik-hide")
+pidess.classList.add("pidess-hide")
+gamburger.classList.add("gamburger-hide")
 
 
 
 
+kebabs.addEventListener("click", () => {
+    all2.classList.add("all2-hide")
+    shashlik.classList.remove("shashlik-hide")
+    pidess.classList.add("pidess-hide")
+    gamburger.classList.add("gamburger-hide")
 
-menutoggle.addEventListener("click", () => {
-    menus.classList.add("menus-flex")
 })
 
-close.addEventListener("click", () => {
-    menus.classList.remove("menus-flex")
-    menus.classList.add("close-dure")
-})
-
-window.addEventListener("scroll", () => {
-    if (scrollY > 85) {
-        header.classList.add("shrink")
-    } else {
-        header.classList.remove("shrink")
-    }
+alla.addEventListener("click", () => {
+    all2.classList.remove("all2-hide")
+    shashlik.classList.add("shashlik-hide")
+    pidess.classList.add("pidess-hide")
+    gamburger.classList.add("gamburger-hide")
 
 })
-window.addEventListener("scroll", () => {
-    menus.classList.remove("menus-flex")
-    menus.classList.add("durition")
+
+pides.addEventListener("click", () => {
+    all2.classList.add("all2-hide")
+    shashlik.classList.add("shashlik-hide")
+    pidess.classList.remove("pidess-hide")
+    gamburger.classList.add("gamburger-hide")
 })
 
-$(document).ready(function () {
-    $(".owl-carousel").owlCarousel();
-});
-
-$(".owl-carousel").owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    dots: false,
-    autoplay: true,
-    autoplayTimeout: 2500,
-    responsive: {
-        0: {
-            items: 1,
-        },
-        600: {
-            items: 2,
-        },
-        1000: {
-            items: 4,
-        },
-    },
-});
-
-$(document).ready(function () {
-    $(".owl-carousel").owlCarousel();
-});
-
-$(".owl-carousel").owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    dots: false,
-    autoplay: true,
-    autoplayTimeout: 2500,
-    responsive: {
-        0: {
-            items: 1,
-        },
-        600: {
-            items: 2,
-        },
-        1000: {
-            items: 4,
-        },
-    },
-});
-
-
+burgers.addEventListener("click", () => {
+    all2.classList.add("all2-hide")
+    shashlik.classList.add("shashlik-hide")
+    pidess.classList.add("pidess-hide")
+    gamburger.classList.remove("gamburger-hide")
+})
 
 all_product.classList.remove("all-hide")
 shawarma.classList.add("shawarma-hide")
@@ -222,3 +198,74 @@ read2.addEventListener("click", () => {
     read.classList.remove("view2-hide")
     read2.classList.add("view2-hide")
 })
+
+menutoggle.addEventListener("click", () => {
+    menus.classList.add("menus-flex")
+})
+
+close.addEventListener("click", () => {
+    menus.classList.remove("menus-flex")
+    menus.classList.add("close-dure")
+})
+
+window.addEventListener("scroll", () => {
+    if (scrollY > 85) {
+        header.classList.add("shrink")
+    } else {
+        header.classList.remove("shrink")
+    }
+
+})
+
+window.addEventListener("scroll", () => {
+    menus.classList.remove("menus-flex")
+    menus.classList.add("durition")
+})
+
+$(document).ready(function () {
+    $(".owl-carousel").owlCarousel();
+});
+
+$(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 2500,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        600: {
+            items: 2,
+        },
+        1000: {
+            items: 4,
+        },
+    },
+});
+
+$(document).ready(function () {
+    $(".owl-carousel").owlCarousel();
+});
+
+$(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 2500,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        600: {
+            items: 2,
+        },
+        1000: {
+            items: 4,
+        },
+    },
+});
