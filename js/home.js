@@ -30,6 +30,8 @@ const read2 = document.getElementById("read2")
 
 
 
+
+
 all_product.classList.remove("all-hide")
 shawarma.classList.add("shawarma-hide")
 turk_kebabi.classList.add("turk-kabab-hide")
@@ -173,8 +175,6 @@ window.addEventListener("scroll", () => {
     menus.classList.add("durition")
 })
 
-
-
 $(document).ready(function () {
     $(".owl-carousel").owlCarousel();
 });
@@ -199,29 +199,26 @@ $(".owl-carousel").owlCarousel({
     },
 });
 
+$(document).ready(function () {
+    $(".owl-carousel").owlCarousel();
+});
 
-shashlik.classList.add("shashlik-hide")
-pidess.classList.add("pidess-hide")
-gamburger.classList.add("gamburger-hide")
-other_dishes.classList.add("other-hide")
-sidess.classList.add("sides-hide")
-cola.classList.add("cola-hide")
-dissertss.classList.add("dissertss-hide")
-meal2.classList.add("meal-hide")
-
-
-
-kebabs.addEventListener("click", () => {
-    all2.classList.add("all2-hide")
-    shashlik.classList.remove("shashlik-hide")
-    pidess.classList.add("pidess-hide")
-    gamburger.classList.add("gamburger-hide")
-    other_dishes.classList.add("other-hide")
-    sidess.classList.add("sides-hide")
-    cola.classList.add("cola-hide")
-    dissertss.classList.add("dissertss-hide")
-    meal2.classList.add("meal-hide")
-
-
-})
-
+$(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 2500,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        600: {
+            items: 2,
+        },
+        1000: {
+            items: 4,
+        },
+    },
+});
