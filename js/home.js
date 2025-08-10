@@ -26,58 +26,9 @@ const text2 = document.getElementById("text2")
 const text3 = document.getElementById("text3")
 const read = document.getElementById("read")
 const read2 = document.getElementById("read2")
-const alla = document.getElementById("alla")
-const kebabs = document.getElementById("kebabs")
-const pides = document.getElementById("pides")
-const burgers = document.getElementById("burgers")
-const sides = document.getElementById("sides")
-const others = document.getElementById("others")
-const drinks = document.getElementById("drinks")
-const dessetrs = document.getElementById("dessetrs")
-const meal = document.getElementById("meal")
-const all2 = document.getElementById("all2")
-const shashlik = document.getElementById("shashlik")
-const pidess = document.getElementById("pidess")
-const gamburger = document.getElementById("gamburger")
 
 
 
-shashlik.classList.add("shashlik-hide")
-pidess.classList.add("pidess-hide")
-gamburger.classList.add("gamburger-hide")
-
-
-
-
-kebabs.addEventListener("click", () => {
-    all2.classList.add("all2-hide")
-    shashlik.classList.remove("shashlik-hide")
-    pidess.classList.add("pidess-hide")
-    gamburger.classList.add("gamburger-hide")
-
-})
-
-alla.addEventListener("click", () => {
-    all2.classList.remove("all2-hide")
-    shashlik.classList.add("shashlik-hide")
-    pidess.classList.add("pidess-hide")
-    gamburger.classList.add("gamburger-hide")
-
-})
-
-pides.addEventListener("click", () => {
-    all2.classList.add("all2-hide")
-    shashlik.classList.add("shashlik-hide")
-    pidess.classList.remove("pidess-hide")
-    gamburger.classList.add("gamburger-hide")
-})
-
-burgers.addEventListener("click", () => {
-    all2.classList.add("all2-hide")
-    shashlik.classList.add("shashlik-hide")
-    pidess.classList.add("pidess-hide")
-    gamburger.classList.remove("gamburger-hide")
-})
 
 all_product.classList.remove("all-hide")
 shawarma.classList.add("shawarma-hide")
@@ -222,29 +173,7 @@ window.addEventListener("scroll", () => {
     menus.classList.add("durition")
 })
 
-$(document).ready(function () {
-    $(".owl-carousel").owlCarousel();
-});
 
-$(".owl-carousel").owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    dots: false,
-    autoplay: true,
-    autoplayTimeout: 2500,
-    responsive: {
-        0: {
-            items: 1,
-        },
-        600: {
-            items: 2,
-        },
-        1000: {
-            items: 4,
-        },
-    },
-});
 
 $(document).ready(function () {
     $(".owl-carousel").owlCarousel();
@@ -269,3 +198,30 @@ $(".owl-carousel").owlCarousel({
         },
     },
 });
+
+
+shashlik.classList.add("shashlik-hide")
+pidess.classList.add("pidess-hide")
+gamburger.classList.add("gamburger-hide")
+other_dishes.classList.add("other-hide")
+sidess.classList.add("sides-hide")
+cola.classList.add("cola-hide")
+dissertss.classList.add("dissertss-hide")
+meal2.classList.add("meal-hide")
+
+
+
+kebabs.addEventListener("click", () => {
+    all2.classList.add("all2-hide")
+    shashlik.classList.remove("shashlik-hide")
+    pidess.classList.add("pidess-hide")
+    gamburger.classList.add("gamburger-hide")
+    other_dishes.classList.add("other-hide")
+    sidess.classList.add("sides-hide")
+    cola.classList.add("cola-hide")
+    dissertss.classList.add("dissertss-hide")
+    meal2.classList.add("meal-hide")
+
+
+})
+
