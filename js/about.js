@@ -24,3 +24,7 @@ window.addEventListener("scroll", () => {
     }
 
 })
+window.addEventListener("scroll", () => {
+    menus.classList.remove("menus-flex")
+    menus.classList.add("durition")
+})
