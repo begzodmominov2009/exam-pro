@@ -35,6 +35,10 @@ sidess.classList.add("sides-hide")
 cola.classList.add("cola-hide")
 dissertss.classList.add("dissertss-hide")
 meal2.classList.add("meal-hide")
+read2.classList.add("view2-hide")
+text.classList.add("text-hide")
+text2.classList.add("text-hide")
+text3.classList.add("text-hide")
 
 alla.addEventListener("click", () => {
     all2.classList.remove("all2-hide")

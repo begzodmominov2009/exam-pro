@@ -1,13 +1,12 @@
+const menutoggle = document.getElementById("toggle");
+const menus = document.getElementById("menus");
+const close = document.getElementById("close");
+const header = document.getElementById("header");
 const barbekyu = document.getElementById("barbekyu")
 const barbekyu2 = document.getElementById("barbekyu2")
 const barbekyu3 = document.getElementById("barbekyu3")
 const view = document.getElementById("view")
 const view2 = document.getElementById("view2")
-const menutoggle = document.getElementById("toggle");
-const menus = document.getElementById("menus");
-const close = document.getElementById("close");
-const header = document.getElementById("header");
-
 
 
 
