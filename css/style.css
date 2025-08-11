@@ -39,10 +39,12 @@
     color: #bb2339;
     transition: 0.5s;
 }
-.owl-prev span:hover{
+
+.owl-prev span:hover {
     background-color: #bb2339;
     color: white;
 }
+
 .owl-next span {
     background-color: transparent;
     display: flex;
@@ -59,7 +61,8 @@
     color: #bb2339;
     transition: 0.5s;
 }
-.owl-next span:hover{
+
+.owl-next span:hover {
     background-color: #bb2339;
     color: white;
 }
@@ -68,65 +71,145 @@
     display: flex;
     align-items: center;
 }
-.all-hide{
+
+.all-hide {
     display: none;
     transition: 0.5s;
 }
-.shawarma-hide{
+
+.shawarma-hide {
     display: none;
 }
-.turk-kabab-hide{
+
+.turk-kabab-hide {
     display: none;
 }
-.hamburger-hide{
+
+.hamburger-hide {
     display: none;
 }
-.shish-hide{
+
+.shish-hide {
     display: none;
 }
-.pizzas-hide{
+
+.pizzas-hide {
     display: none;
 }
-.dissert-hide{
+
+.dissert-hide {
     display: none;
 }
-.barbekyu-hide{
+
+.barbekyu-hide {
     display: none;
     transition: 0.5s;
 }
-.view2-hide{
+
+.view2-hide {
     display: none;
 }
-.text-hide{
+
+.text-hide {
     display: none;
 }
-.all2-hide{
+
+.all2-hide {
     display: none;
 }
-.shashlik-hide{
+
+.shashlik-hide {
     display: none;
 }
-.pidess-hide{
+
+.pidess-hide {
     display: none;
 }
-.gamburger-hide{
+
+.gamburger-hide {
     display: none;
 }
-.other-hide{
+
+.other-hide {
     display: none;
 }
-.sides-hide{
+
+.sides-hide {
     display: none;
 }
-.cola-hide{
+
+.cola-hide {
     display: none;
 }
-.dissertss-hide{
+
+.dissertss-hide {
     display: none;
 }
-.meal-hide{
+
+.meal-hide {
     display: none;
 }
-.view2-hide{
+
+.view2-hide {
     display: none;
+}
+
+
+.tun .tun {
+    background-color: rgb(50, 48, 48);
+}
+
+.tun .tun div {
+    background-color: rgb(83, 81, 81);
+    color: white;
+
+}
+.tun div li p{
+    color: white;
+}
+.tun .tun div li{
+    color: white;
+}
+
+.tun .tun div h3{
+    color: white;
+}
+.tun .tun div h1{
+    color: white;
+}
+.tun .tun div b{
+    color: white;
+}
+
+.tun .tun div p {
+    color: white;
+}
+.tun .tun div svg{
+    fill: white;
+}
+
+.tun .tun div img {
+    color: white;
+
+}
+
+.tun .tun-span {
+    display: none;
+    cursor: pointer;
+}
+
+.kun-span {
+    display: none;
+    cursor: pointer;
+}
+
+.tun-span {
+    display: block;
+    cursor: pointer;
+
+}
+
+.tun .kun-span {
+    display: block;
+    cursor: pointer;
 }

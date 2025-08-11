@@ -26,10 +26,14 @@ const text2 = document.getElementById("text2")
 const text3 = document.getElementById("text3")
 const read = document.getElementById("read")
 const read2 = document.getElementById("read2")
+const body = document.body
+const moon = document.getElementById("moon")
+const kun = document.getElementById("sun")
 
 
-
-
+moon.addEventListener("click" , () => {
+    body.classList.toggle("tun")
+})
 
 
 all_product.classList.remove("all-hide")
@@ -153,7 +157,8 @@ read2.addEventListener("click", () => {
 })
 
 menutoggle.addEventListener("click", () => {
-    menus.classList.add("menus-flex")
+    menus.classList.toggle("menus-flex")
+
 })
 
 close.addEventListener("click", () => {
@@ -174,6 +179,7 @@ window.addEventListener("scroll", () => {
     menus.classList.remove("menus-flex")
     menus.classList.add("durition")
 })
+
 
 $(document).ready(function () {
     $(".owl-carousel").owlCarousel();
