@@ -1,3 +1,7 @@
+*{
+      font-family: "Roboto", sans-serif;
+
+}
 #menus {
     transform: translateX(-100%);
 }
@@ -160,9 +164,11 @@
 }
 
 .tun .tun div {
-    background-color: rgb(83, 81, 81);
     color: white;
 
+}
+.tun .tun .owl-carousel{
+    background-color: black;
 }
 .tun div li p{
     color: white;

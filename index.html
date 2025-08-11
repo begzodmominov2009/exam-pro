@@ -14,10 +14,14 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-  
+
     <header id="header" class="bg-[#bb2339] py-[25px] fixed z-50 w-full ">
         <div class="container mx-auto px-[20px]">
             <div class="flex items-center justify-between">
@@ -26,7 +30,7 @@
                 </a>
                 <ul class="hidden lg:flex gap-[60px] items-center font-[700px] text-[white] whitespace-nowrap">
                     <li>
-                        <a href="./index.html">
+                        <a class="text-[#0cce0c]" href="./index.html">
                             Home
                         </a>
                     </li>
@@ -152,6 +156,24 @@
                 Log in
             </a>
         </li>
+        <!-- <li >
+            <button id="moon">
+                <span class="tun-span">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#ffff">
+                        <path
+                            d="M600-640 480-760l120-120 120 120-120 120Zm200 120-80-80 80-80 80 80-80 80ZM483-80q-84 0-157.5-32t-128-86.5Q143-253 111-326.5T79-484q0-146 93-257.5T409-880q-18 99 11 193.5T520-521q71 71 165.5 100T879-410q-26 144-138 237T483-80Zm0-80q88 0 163-44t118-121q-86-8-163-43.5T463-465q-61-61-97-138t-43-163q-77 43-120.5 118.5T159-484q0 135 94.5 229.5T483-160Zm-20-305Z" />
+                    </svg>
+                </span>
+                <span class="kun-span">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#ffff">
+                        <path
+                            d="M440-800v-120h80v120h-80Zm0 760v-120h80v120h-80Zm360-400v-80h120v80H800Zm-760 0v-80h120v80H40Zm708-252-56-56 70-72 58 58-72 70ZM198-140l-58-58 72-70 56 56-70 72Zm564 0-70-72 56-56 72 70-58 58ZM212-692l-72-70 58-58 70 72-56 56Zm268 452q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Zm0-80q67 0 113.5-46.5T640-480q0-67-46.5-113.5T480-640q-67 0-113.5 46.5T320-480q0 67 46.5 113.5T480-320Zm0-160Z" />
+                    </svg>
+                </span>
+            </button>
+        </li> -->
         <svg id="close" class="top-7 sm:top-10 absolute cursor-pointer right-5 sm:right-10"
             xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff">
             <path
@@ -318,33 +340,33 @@
         <section class="tun pt-[60px] sm:pt-[120px]">
             <div class="container mx-auto px-[20px]">
                 <h1 class="text-[30px] sm:text-[48px] text-[#bb2339] mb-[50px]">Our Regular Menu Pack</h1>
-                <ul class="flex gap-[10px] overflow-scroll xl:overflow-hidden">
+                <ul class="flex gap-[20px] overflow-scroll xl:overflow-hidden">
                     <li id="all"
-                        class="max-w-[auto] w-full  inline-block text-center px-[30px] text-[#bb2339] hover:text-[white] duration-[0.3s] cursor-pointer hover:bg-[#bb2339] rounded-[20px] py-[7px] border-[2px] border-[#bb2339]">
+                        class="max-w-[80px] w-full  inline-block text-center px-[30px] text-[#bb2339] hover:text-[white] duration-[0.3s] cursor-pointer hover:bg-[#bb2339] rounded-[20px] py-[7px] border-[2px] border-[#bb2339]">
                         All</li>
-                    <li class="max-w-[auto] w-full text-center inline-block px-[30px] text-[#bb2339] hover:text-[white] duration-[0.3s] cursor-pointer hover:bg-[#bb2339] rounded-[20px] py-[7px] border-[2px] border-[#bb2339]"
+                    <li class="max-w-[170px] w-full text-center inline-block px-[30px] text-[#bb2339] hover:text-[white] duration-[0.3s] cursor-pointer hover:bg-[#bb2339] rounded-[20px] py-[7px] border-[2px] border-[#bb2339]"
                         id="shawarma-head">
                         Shawarma
                     </li>
                     <li id="turk-kebab"
-                        class="max-w-[auto] whitespace-nowrap w-full inline-block text-center px-[30px] text-[#bb2339] hover:text-[white] duration-[0.3s] cursor-pointer hover:bg-[#bb2339] rounded-[20px] py-[7px] border-[2px] border-[#bb2339]">
+                        class="max-w-[150px] whitespace-nowrap w-full inline-block text-center px-[30px] text-[#bb2339] hover:text-[white] duration-[0.3s] cursor-pointer hover:bg-[#bb2339] rounded-[20px] py-[7px] border-[2px] border-[#bb2339]">
                         Turk Kebab</li>
                     <li id="burger"
-                        class="max-w-[auto] whitespace-nowrap w-full text-center inline-block px-[30px] text-[#bb2339] hover:text-[white] duration-[0.3s] cursor-pointer hover:bg-[#bb2339] rounded-[20px] py-[7px] border-[2px] border-[#bb2339]">
+                        class="max-w-[170px] whitespace-nowrap w-full text-center inline-block px-[30px] text-[#bb2339] hover:text-[white] duration-[0.3s] cursor-pointer hover:bg-[#bb2339] rounded-[20px] py-[7px] border-[2px] border-[#bb2339]">
                         Hamburger Kebab</li>
                     <li id="doner"
-                        class="max-w-[auto] w-full whitespace-nowrap text-center inline-block px-[30px] text-[#bb2339] hover:text-[white] duration-[0.3s] cursor-pointer hover:bg-[#bb2339] rounded-[20px] py-[7px] border-[2px] border-[#bb2339]">
+                        class="max-w-[170px] w-full whitespace-nowrap text-center inline-block px-[30px] text-[#bb2339] hover:text-[white] duration-[0.3s] cursor-pointer hover:bg-[#bb2339] rounded-[20px] py-[7px] border-[2px] border-[#bb2339]">
                         Doner Kabab</li>
                     <li id="shish"
-                        class="max-w-[auto] w-full whitespace-nowrap text-center inline-block px-[30px] text-[#bb2339] hover:text-[white] duration-[0.3s] cursor-pointer hover:bg-[#bb2339] rounded-[20px] py-[7px] border-[2px] border-[#bb2339]">
+                        class="max-w-[170px] w-full whitespace-nowrap text-center inline-block px-[30px] text-[#bb2339] hover:text-[white] duration-[0.3s] cursor-pointer hover:bg-[#bb2339] rounded-[20px] py-[7px] border-[2px] border-[#bb2339]">
                         Shish Kebab</li>
                     <li id="french"
-                        class="max-w-[auto] w-full whitespace-nowrap text-center h-[auto] inline-block px-[30px] text-[#bb2339] hover:text-[white] duration-[0.3s] cursor-pointer hover:bg-[#bb2339] rounded-[20px] py-[7px] border-[2px] border-[#bb2339]">
+                        class="max-w-[180px] w-full whitespace-nowrap text-center h-[auto] inline-block px-[30px] text-[#bb2339] hover:text-[white] duration-[0.3s] cursor-pointer hover:bg-[#bb2339] rounded-[20px] py-[7px] border-[2px] border-[#bb2339]">
                         French fries Pizza</li>
                     <li id="dissert"
-                        class="max-w-[auto] w-full text-center h-[auto] inline-block px-[30px] text-[#bb2339] hover:text-[white] duration-[0.3s] cursor-pointer hover:bg-[#bb2339] rounded-[20px] py-[7px] border-[2px] border-[#bb2339]">
+                        class="max-w-[120px] w-full text-center h-[auto] inline-block px-[30px] text-[#bb2339] hover:text-[white] duration-[0.3s] cursor-pointer hover:bg-[#bb2339] rounded-[20px] py-[7px] border-[2px] border-[#bb2339]">
                         Disserts</li>
-                    </ul>
+                </ul>
             </div>
         </section>
 
